@@ -3,23 +3,16 @@
   style="background: white; stroke-width: 0px;"
   width="250" height="250">
   <defs>
-    <pattern id="pupil" patternUnits="userSpaceOnUse"
-       x="0" y="0" width="1.5" height="2"
-       style="background-color:white;">
-       <rect width="1.5" height="2" fill="white"/>
-       <path d="M 0 0 L 2 0" stroke="black" stroke-width="1.2" transform="rotate(90)"/>
-    </pattern>
-
     <pattern id="iris" patternUnits="userSpaceOnUse" patternTransform="rotate(45 0 0)"
        x="0" y="0" width="2" height="2"
        style="background-color:white;">
-       <rect width="2" height="2" fill="white"/>
+       <rect width="2" height="2" fill="param(iris_fill) white"/>
       <path d="M 0 0 L 2 0" stroke="black" stroke-width="1.2"/>
     </pattern>
 
     <pattern id="iris2" patternUnits="userSpaceOnUse"
        x="0" y="0" width="2" height="2">
-       <rect width="2" height="2" fill="white"/>
+       <rect width="2" height="2" fill="param(iris_fill) white"/>
        <circle cx="1.5" cy="1" r="0.5"/>
     </pattern>
 
@@ -54,43 +47,27 @@
                A 20 10 0 0 1 29 8"
             stroke-width="1" fill="none" transform="rotate(0)"/>
     </symbol>
-
-    <symbol id="pupil-segment" height="4" style="overflow:visible">
-      <path d="M 0 0
-               L 1.618033988749895 1.1755705045849463
-               C 4 1.5, 4 -1.5, 1.618033988749895 -1.1755705045849463
-               Z"
-            stroke-width="0.1" fill="black"/>
-    </symbol>
   </defs>
-
-  <!-- <g transform="scale(1,-1), translate(0,-60)">
-    <rect x="10" y="10" width="30" height="30" stroke="green"
-    stroke-width="0.3" fill="url(#triangle)" />
-  </g> -->
-
   <g id="image" stroke="black" transform="scale(1,-1), translate(120,-210)">
-    <polygon points="-100,0,0,200,100,0" fill="url(#triangle)" stroke-width="4" stroke-linejoin="bevel"/>
+    <polygon points="-100,0,0,200,100,0" fill="url(#triangle)" stroke-width="2.5" stroke-linejoin="bevel"/>
 
     <use xlink:href="#_ruller" x="0" y="-30" width="105" height="120"/>
     <use xlink:href="#_ruller" x="0" y="-30" width="105" height="120" transform="scale(-1,1)"/>
 
     <g id="centre" stroke="black" stroke-width="1.5" transform="translate(0,80)">
       <g id="uroboros" transform="rotate(-15)">
-        <path fill="white"
+        <path fill="param(uroboros_fill) white"
               stroke-linejoin="round" stroke="black"
               d="M 21.213203435596427 21.213203435596427
                  C 31.213203435596427 11.213203435596427, 35 4, 35 0
                  C 35 4, 38.284271247461902 18.284271247461902, 28.284271247461902 28.284271247461902"/>
-        <path fill="white"
+        <path fill="param(uroboros_fill) white"
               stroke-linejoin="round" stroke="black"
               d="M 21.213203435596427 21.213203435596427
                  A 30 30 0 1 1 29 -7.6
                  A 7 12 0 1 0 39 -9
                  A 40 40 0 1 0 28.284271247461902 28.284271247461902"/>
         <g id="uroboros-strips">
-          <!-- <use xlink:href="#uroboros-strip" x="0" y="0" width="40" height="9" transform="rotate(0)"/> -->
-          <!-- <use xlink:href="#uroboros-strip" x="0" y="0" width="40" height="9" transform="rotate(20)"/> -->
           <use xlink:href="#uroboros-strip" x="0" y="0" width="40" height="9" transform="rotate(40)"/>
           <use xlink:href="#uroboros-strip" x="0" y="0" width="40" height="9" transform="rotate(60)"/>
           <use xlink:href="#uroboros-strip" x="0" y="0" width="40" height="9" transform="rotate(80)"/>
@@ -106,7 +83,6 @@
           <use xlink:href="#uroboros-strip" x="0" y="0" width="40" height="9" transform="rotate(280)"/>
           <use xlink:href="#uroboros-strip" x="0" y="0" width="40" height="9" transform="rotate(300)"/>
           <use xlink:href="#uroboros-strip" x="0" y="0" width="40" height="9" transform="rotate(320)"/>
-          <!-- <use xlink:href="#uroboros-strip" x="0" y="0" width="40" height="9" transform="rotate(340)"/> -->
         </g>
       </g>
 
@@ -115,20 +91,16 @@
         <path d="M 0 -18
                  A 18 18, 0, 0, 0, 0 18 Z"
               fill="url(#iris)"/>
-        <circle cx="0" cy="0" r="7.5" fill="white"/>
+        <circle cx="0" cy="0" r="7.5" fill="white" stroke="param(accent) black"/>
         <g id="pupil" transform="rotate(75)">
           <rect x="-4.5" y="-2" rx="1" width="9" height="4" transform="rotate(-45)"/>
           <rect x="-4.5" y="0" rx="1" width="9" height="2" transform="rotate(30)"/>
           <rect x="-4.5" y="-2" rx="1" width="9" height="2" transform="rotate(60)"/>
-          <!-- <use xlink:href="#pupil-segment" x="0" y="0" width="2" height="4" transform="rotate(90)"/>
-          <use xlink:href="#pupil-segment" x="0" y="0" width="2" height="4" transform="rotate(162)"/>
-          <use xlink:href="#pupil-segment" x="0" y="0" width="2" height="4" transform="rotate(234)"/>
-          <use xlink:href="#pupil-segment" x="0" y="0" width="2" height="4" transform="rotate(306)"/>
-          <use xlink:href="#pupil-segment" x="0" y="0" width="2" height="4" transform="rotate(18)"/> -->
         </g>
+        <circle cx="0" cy="0" r="18" fill="none" stroke="param(accent) black"/>
       </g>
-      <circle cx="0" cy="0" r="18" fill="none"/>
     </g>
   </g>
 
+  <script type="text/ecmascript" xlink:href="param.js" />
 </svg>
