@@ -68,7 +68,7 @@
                  A 7 12 0 1 0 39 -9
                  A 40 40 0 1 0 28.284271247461902 28.284271247461902"/>
         <g id="uroboros-strips">
-          <use xlink:href="#uroboros-strip" x="0" y="0" width="40" height="9" transform="rotate(40)"/>
+          <use xlink:href="param(test) #uroboros-strip" x="0" y="0" width="40" height="9" transform="rotate(40)"/>
           <use xlink:href="#uroboros-strip" x="0" y="0" width="40" height="9" transform="rotate(60)"/>
           <use xlink:href="#uroboros-strip" x="0" y="0" width="40" height="9" transform="rotate(80)"/>
           <use xlink:href="#uroboros-strip" x="0" y="0" width="40" height="9" transform="rotate(100)"/>
@@ -87,9 +87,18 @@
       </g>
 
       <g id="eye" stroke-width="1">
-        <circle cx="0" cy="0" r="18" fill="url(#iris2)"/>
-        <path d="M 0 -18
-                 A 18 18, 0, 0, 0, 0 18 Z"
+        <!-- <circle cx="0" cy="0" r="18" fill="url(#iris2)"/> -->
+        <path d="M 0 18
+                 A 18 18, 0, 0, 0, 9 15.588457268119893
+                 A 18 18, 0, 0, 1, 15.588457268119893 19.2
+                 A 18 18, 0, 0, 0, 15.588457268119893 9
+                 A 18 18, 0, 0, 0, 0 -18 Z"
+              fill="url(#iris2)"/>
+        <path d="M 0 18
+                 A 18 18, 0, 0, 1, -9 15.588457268119893
+                 A 18 18, 0, 0, 0, -15.588457268119893 19.2
+                 A 18 18, 0, 0, 1, -15.588457268119893 9
+                 A 18 18, 0, 0, 1, 0 -18 Z"
               fill="url(#iris)"/>
         <circle cx="0" cy="0" r="7.5" fill="white" stroke="param(accent) black"/>
         <g id="pupil" transform="rotate(75)">
@@ -97,7 +106,7 @@
           <rect x="-4.5" y="0" rx="1" width="9" height="2" transform="rotate(30)"/>
           <rect x="-4.5" y="-2" rx="1" width="9" height="2" transform="rotate(60)"/>
         </g>
-        <circle cx="0" cy="0" r="18" fill="none" stroke="param(accent) black"/>
+        <!-- <circle cx="0" cy="0" r="18" fill="none" stroke="param(accent) black"/> -->
       </g>
     </g>
   </g>

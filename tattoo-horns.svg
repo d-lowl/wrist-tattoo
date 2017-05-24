@@ -68,7 +68,7 @@
                  A 7 12 0 1 0 39 -9
                  A 40 40 0 1 0 28.284271247461902 28.284271247461902"/>
         <g id="uroboros-strips">
-          <use xlink:href="#uroboros-strip" x="0" y="0" width="40" height="9" transform="rotate(40)"/>
+          <use xlink:href="param(test) #uroboros-strip" x="0" y="0" width="40" height="9" transform="rotate(40)"/>
           <use xlink:href="#uroboros-strip" x="0" y="0" width="40" height="9" transform="rotate(60)"/>
           <use xlink:href="#uroboros-strip" x="0" y="0" width="40" height="9" transform="rotate(80)"/>
           <use xlink:href="#uroboros-strip" x="0" y="0" width="40" height="9" transform="rotate(100)"/>
@@ -91,7 +91,15 @@
         <path d="M 0 -18
                  A 18 18, 0, 0, 0, 0 18 Z"
               fill="url(#iris)"/>
-        <circle cx="0" cy="0" r="7.5" fill="white" stroke="param(accent) black"/>
+        <path d="M 0 7.5
+                 A 7.5 7.5, 0, 0, 0, 3.75 6.495190528383289
+                 A 7.5 7.5, 0, 0, 1, 6.495190528383289 8
+                 A 7.5 7.5, 0, 0, 0, 6.495190528383289 3.75
+                 A 7.5 7.5, 0, 0, 0, 0 -7.5
+                 A 7.5 7.5, 0, 0, 0, -6.495190528383289 3.75
+                 A 7.5 7.5, 0, 0, 0, -6.495190528383289 8
+                 A 7.5 7.5, 0, 0, 1, -3.75 6.495190528383289
+                 A 7.5 7.5, 0, 0, 0, 0 7.5 Z" fill="white" stroke="param(accent) black"/>
         <g id="pupil" transform="rotate(75)">
           <rect x="-4.5" y="-2" rx="1" width="9" height="4" transform="rotate(-45)"/>
           <rect x="-4.5" y="0" rx="1" width="9" height="2" transform="rotate(30)"/>
