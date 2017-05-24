@@ -1,14 +1,14 @@
 # wrist-tattoo
 
-Several tattoo sketches written with SVG with some variables to modify templates (provided either in HTML as object params or replaced on PNG rasterizing stage)
+Several tattoo sketches written with SVG with some variables to modify templates (provided either in HTML as object params or replaced on PNG rasterising stage)
 
 ## HTML page
 
-Clone the repository and open index.html in browser. (Compatibility is not guaranted; tested on Safari 9.1.3)
+Clone the repository and open index.html in browser. Build script must be run at least ones beforehand. (Compatibility is not guaranteed; tested on Safari 9.1.3)
 
 ## Build script
 
-Rasterizes all svg-s with all variable options.
+Rasterises all svg-s with all variable options.
 
 ### Requirements
 
