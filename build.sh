@@ -40,7 +40,7 @@ function build_one { # svg_name
   raster_svg _temp.svg "$1"-5
 
   cp $1.svg _temp.svg
-  replace_var iris_dot "#00d877"
+  replace_var iris_dot "#00ea81"
   raster_svg _temp.svg "$1"-6
 
   cp $1.svg _temp.svg
@@ -86,6 +86,7 @@ build_one tattoo-ears
 build_one tattoo-horns
 build_one tattoo-ears-big
 build_one tattoo-horns-big
+build_one tattoo-horns-big-sharper
 
 rm _temp.svg
 rm _temp.svg.bak
