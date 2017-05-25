@@ -1,30 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink"
-  style="background: white; stroke-width: 0px;"
+  style="background: param(skin) #606060; stroke-width: 0px;"
   width="250" height="250">
   <defs>
     <pattern id="iris" patternUnits="userSpaceOnUse" patternTransform="rotate(45 0 0)"
        x="0" y="0" width="2" height="4"
-       style="background-color:white;">
-       <rect width="2" height="4" fill="param(iris_fill) white"/>
+       style="background-color:param(skin) #606060;">
+       <rect width="2" height="4" fill="param(iris_fill) param(skin) #606060"/>
       <path d="M 0 0 L 2 0" stroke="param(iris_dot) black" stroke-width="2"/>
     </pattern>
 
     <pattern id="iris2" patternUnits="userSpaceOnUse"
        x="0" y="0" width="4" height="4">
-       <rect width="4" height="4" fill="param(iris_fill) white"/>
+       <rect width="4" height="4" fill="param(iris_fill) param(skin) #606060"/>
        <circle cx="2" cy="1" r="1" fill="param(iris_dot) black"/>
     </pattern>
 
     <pattern id="triangle" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"
        x="1" y="1" width="5" height="5">
-       <rect width="5" height="5" fill="white"/>
+       <rect width="5" height="5" fill="param(skin) #606060"/>
        <rect x="2" y="2" width="1" height="1" fill="grey" />
     </pattern>
 
     <pattern id="ruller_pattern" patternUnits="userSpaceOnUse" patternTransform="rotate(45 0 0)"
        x="1" y="0" width="15" height="22">
-       <rect width="100" height="100" fill="white"/>
+       <rect width="100" height="100" fill="param(skin) #606060"/>
        <path d="M 0 0 L 0 8
                 M 15 0 L 15 8
                 M 5 0 L 5 4
@@ -49,7 +49,7 @@
     </symbol>
 
     <symbol id="simple-eye">
-      <circle cx="9" cy="9" r="7.5" fill="white" stroke="param(accent) black"/>
+      <circle cx="9" cy="9" r="7.5" fill="param(skin) #606060" stroke="param(accent) black"/>
     </symbol>
 
     <symbol id="ears">
@@ -61,7 +61,7 @@
                A 7.5 7.5, 0, 0, 0, -6.495190528383289 3.75
                A 7.5 7.5, 0, 0, 0, -6.495190528383289 8
                A 7.5 7.5, 0, 0, 0, -3.75 6.495190528383289
-               A 7.5 7.5, 0, 0, 0, 0 7.5 Z" fill="white" stroke="param(accent) black" transform="translate(9,9)"/>
+               A 7.5 7.5, 0, 0, 0, 0 7.5 Z" fill="param(skin) #606060" stroke="param(accent) black" transform="translate(9,9)"/>
     </symbol>
 
     <symbol id="horns">
@@ -73,7 +73,7 @@
                A 7.5 7.5, 0, 0, 0, -6.495190528383289 3.75
                A 7.5 7.5, 0, 0, 0, -6.495190528383289 8
                A 7.5 7.5, 0, 0, 1, -3.75 6.495190528383289
-               A 7.5 7.5, 0, 0, 0, 0 7.5 Z" fill="white" stroke="param(accent) black" transform="translate(9,9)"/>
+               A 7.5 7.5, 0, 0, 0, 0 7.5 Z" fill="param(skin) #606060" stroke="param(accent) black" transform="translate(9,9)"/>
     </symbol>
 
     <symbol id="simple-eye-big">
@@ -136,12 +136,12 @@
 
     <g id="centre" stroke="black" stroke-width="1.5" transform="translate(0,80)">
       <g id="uroboros" transform="rotate(-15)">
-        <path fill="param(uroboros_fill) white"
+        <path fill="param(uroboros_fill) param(skin) #606060"
               stroke-linejoin="round" stroke="black"
               d="M 21.213203435596427 21.213203435596427
                  C 31.213203435596427 11.213203435596427, 35 4, 35 0
                  C 35 4, 38.284271247461902 18.284271247461902, 28.284271247461902 28.284271247461902"/>
-        <path fill="param(uroboros_fill) white"
+        <path fill="param(uroboros_fill) param(skin) #606060"
               stroke-linejoin="round" stroke="black"
               d="M 21.213203435596427 21.213203435596427
                  A 30 30 0 1 1 29 -7.6
