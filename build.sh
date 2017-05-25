@@ -3,7 +3,7 @@
 ALPHA=0
 SIZE=4
 OUTPUT=outs
-SKIN=white
+SKIN=\#d0d0d0
 
 function raster_svg { # in-name out-name
   svgexport $1 $OUTPUT/$2@"$SIZE"x.png "$SIZE"x
@@ -86,7 +86,7 @@ function ctrl_c() {
   exit 0
 }
 
-while getopts ":ax:o:s:" opt; do
+while getopts ":ax:o:s:c" opt; do
   case $opt in
     a)
       ALPHA=1
@@ -103,6 +103,9 @@ while getopts ":ax:o:s:" opt; do
     \?)
       echo "Invalid option: -$OPTARG" >&2
       exit 1
+      ;;
+    c)
+      rm $OUTPUT/tattoo*.png
       ;;
     :)
       echo "Option -$OPTARG requires an argument." >&2

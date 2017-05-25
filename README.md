@@ -24,4 +24,5 @@ Options:
 * -a: alpha-versions
 * -x: size multiplier (default is 4, corresponding to 1000px x 1000px PNG)
 * -o: output directory (default is 'outs')
-* -s: background color (default is 'white')
+* -s: background color (default is '#d0d0d0')
+* -c: clear before building
